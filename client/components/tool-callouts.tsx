@@ -141,6 +141,7 @@ export function ToolCallout({
           alignItems: "center",
           gap: 8,
           flex: 1,
+          minWidth: 0,
         },
         toolPill: {
           fontSize: 11,
@@ -472,7 +473,7 @@ export function ToolCallout({
               )}
             </Breathe>
           ) : null}
-          <Text selectable style={styles.titleText} numberOfLines={1}>
+          <Text selectable style={styles.titleText} numberOfLines={1} ellipsizeMode="tail">
             {data.title}
           </Text>
         </View>
